@@ -94,6 +94,7 @@
         border-bottom: 1px solid $light-grey;
       }
 
+      li.active a,
       a:hover, a:focus, a:active {
         background-color: lighten($brand-primary, 70%);
         text-decoration: none;
