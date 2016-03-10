@@ -1,0 +1,18 @@
+[role='main'] {
+
+}
+
+
+@media (min-width: 930px) {
+
+  [role='main'] {
+    float: left;
+    width: 66.6666%;
+    padding-right: 15px;
+    margin-top: 30px;
+
+    border-right: 1px solid $light-grey;
+    min-height: 700px;
+  }
+
+}

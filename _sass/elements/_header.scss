@@ -1,14 +1,107 @@
-.logo-holder {
+#banner {
 
-  width: 100%;
+  padding-top: 5px;
 
-  a {
-    display: block;
+  .logo-holder {
+
+    width: 100%;
+
+    a {
+      display: block;
+    }
+
+    img {
+      height: 80px;
+      width: auto; /* 295px */
+    }
+
   }
 
-  img {
-    height: 80px;
-    width: auto; /* 295px */
+  .nav-menu {
+    @include clearfix;
+
+    border-top: 1px solid $light-grey;
+
+    h1, h2, h3 {
+      @include sr-only;
+    }
+
+    ul {
+      @include reset;
+      @include clearfix;
+
+      list-style: none;
+      font-weight: 300;
+      float: right;
+      text-transform: uppercase;
+    }
+
+    li {
+      @include reset;
+      padding: 8px 0;
+      float: left;
+      &::after {
+        content: '\2022';
+        padding: 8px;
+      }
+
+      &:last-child {
+        &::after { display: none; }
+      }
+    }
+
+    ul, li, a {
+      color: $dark-grey;
+      text-decoration: none;
+      font-family: 'Merriweather sans', sans-serif;
+    }
+
+    a:hover, a:focus, a:active {
+      color: $brand-primary;
+      text-decoration: underline;
+    }
+
   }
 
 }
+
+@media (min-width: 930px) {
+
+  #banner {
+    float: right;
+    width: 33.3333%;
+    padding-top: 30px;
+    padding-left: 15px;
+
+    .nav-menu {
+
+      ul {
+        float: none;
+        display: block;
+        padding-left: 60px;
+      }
+
+      li {
+        @include reset;
+        float: none;
+        display: block;
+        &::after { display: none; }
+      }
+
+      a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid $light-grey;
+      }
+
+      a:hover, a:focus, a:active {
+        background-color: lighten($brand-primary, 70%);
+        text-decoration: none;
+      }
+
+
+    }
+  }
+
+}
+

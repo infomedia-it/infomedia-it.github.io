@@ -6,10 +6,14 @@
 <body>
     <div class="infomedia-page-container">
 
-        {% include header.html %}
+        <div class="layout-mgr">
 
-        <div class="infomedia-stripe" role="main">
-            {{ content }}
+            {% include header.html %}
+
+            <div class="infomedia-stripe" role="main">
+                {{ content }}
+            </div>
+
         </div>
 
         {% include footer.html %}
