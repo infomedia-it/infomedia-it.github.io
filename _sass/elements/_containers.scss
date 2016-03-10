@@ -19,8 +19,13 @@
   .layout-mgr {
     @include reset;
     @include clearfix;
-
   }
 }
 
+.text-container {
+  @include reset;
+  @include clearfix;
 
+  max-width: 605px;
+  margin: 0 auto;
+}
