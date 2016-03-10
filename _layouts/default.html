@@ -3,18 +3,17 @@
 
   {% include head.html %}
 
-  <body>
+<body>
+    <div class="infomedia-page-container">
 
-    {% include header.html %}
+        {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+        <div class="infomedia-stripe" role="main">
+            {{ content }}
+        </div>
+
+        {% include footer.html %}
+
     </div>
-
-    {% include footer.html %}
-
-  </body>
-
+</body>
 </html>

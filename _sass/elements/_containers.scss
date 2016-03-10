@@ -1,0 +1,20 @@
+.infomedia-container {
+  @include reset;
+  @include clearfix;
+}
+
+.infomedia-stripe {
+  @extend .infomedia-container;
+  width: 100%;
+  padding-bottom: $default-padding;
+}
+
+.infomedia-page-container {
+  @extend .infomedia-container;
+
+  margin: 0 auto;
+  padding: 0 $default-padding;
+  max-width: 960px;
+}
+
+

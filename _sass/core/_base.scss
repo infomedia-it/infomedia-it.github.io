@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: $dark-grey;
+  background-color: $white;
+}
+
+h1, h2, h3, h4, h5, h6, p, table {
+  margin-top: 0;
+}
+
+[aria-hidden=true] {
+  display: none !important;
+}
+
