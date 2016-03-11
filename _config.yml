@@ -8,9 +8,6 @@
 
 # Site settings
 title: Infomedia editore
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://e-infomedia.com" # the base hostname & protocol for your site
-
 login_url: "https://medium.com/l-o-g-i-n"
 dev_url: "https://medium.com/developing-software-solutions"
 cp_url: "https://medium.com/infomedia-computer-programming"
