@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6, p, table {
 }
 
 [aria-hidden=true] {
-  display: none !important;
+  display: none;
 }
 
 .img-responsive {
@@ -28,5 +28,12 @@ h1, h2, h3, h4, h5, h6, p, table {
 
 .sr-only {
   @include sr-only;
+}
+
+.picture-label {
+  display: block;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 1em;
 }
 
