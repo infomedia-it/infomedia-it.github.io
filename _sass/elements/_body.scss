@@ -3,7 +3,7 @@
   padding-top: 20px;
 
   form {
-    margin: 30px auto 80px auto;
+    margin: 30px auto 40px auto;
   }
 
   h2 {
@@ -11,6 +11,7 @@
 
     a {
       display: block;
+      color: inherit;
     }
   }
 
@@ -20,28 +21,33 @@
     display: block;
     font-family: 'Merriweather sans', sans-serif;
     text-transform: uppercase;
-    font-size: 110%;
     font-weight: 300;
     margin-bottom: 15px;
-    border-top: 1px solid $light-grey;
-    padding: 8px 0;
+    border-top: 1px solid $black;
+    color: $black;
+    padding: 4px 0;
     text-align: center;
-    color: $dark-grey;
   }
 
-  article {
-    margin-bottom: 80px;
+  article:not(:last-child) {
+    margin-bottom: 55px;
+  }
+
+  .logo-magazine {
+    height: auto;
+    max-width: 350px;
+    width: 100%;
   }
 
   .btn-leggi {
 
-    margin-top: 25px;
+    margin-top: 1.5em;
 
     a {
       @include reset;
 
       color: white;
-      background-color: $brand-primary;
+      background-color: lighten($brand-primary, 20%);
       text-decoration: none;
       display: block;
       padding: 10px;
@@ -55,7 +61,7 @@
       box-shadow: 1px 1px 4px rgba(50, 50, 50, 0.4);
 
       &:hover, &:active, &:focus {
-        background-color: lighten($brand-primary, 20%);
+        background-color: lighten($brand-primary, 10%);
       }
     }
   }
