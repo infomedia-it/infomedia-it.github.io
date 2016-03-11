@@ -2,6 +2,19 @@
 
   padding-top: 20px;
 
+  .intro {
+    margin-bottom: 2em;
+
+    p {
+      font-family: 'Merriweather sans', sans-serif;
+      font-style: italic;
+    }
+
+    @media (min-width: 930px) {
+      display: none;
+    }
+  }
+
   form {
     margin: 30px auto 50px auto;
   }
@@ -17,6 +30,7 @@
     a {
       display: block;
       color: inherit;
+      border: 0;
     }
   }
 
@@ -44,7 +58,7 @@
     width: 100%;
   }
 
-  .btn-leggi {
+  .btn-vai {
 
     margin-top: 1.5em;
 

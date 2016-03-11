@@ -5,6 +5,7 @@
   .logo-holder {
 
     width: 100%;
+    border-bottom: 1px solid $light-grey;
 
     a {
       display: block;
@@ -19,8 +20,6 @@
 
   .nav-menu {
     @include clearfix;
-
-    border-top: 1px solid $light-grey;
 
     h1, h2, h3 {
       @include sr-only;
@@ -67,6 +66,17 @@
 
   }
 
+  .introduction {
+    margin: 1em 0 2em 16px;
+    font-family: 'Merriweather sans', sans-serif;
+    font-style: italic;
+    display: none;
+  }
+
+  #lnk-home {
+    @include sr-only;
+  }
+
 }
 
 @media (min-width: 930px) {
@@ -82,13 +92,14 @@
       ul {
         float: none;
         display: block;
-        padding-left: 60px;
+        border-top: 1px solid $light-grey;
       }
 
       li {
         @include reset;
         float: none;
         display: block;
+
         &::after { display: none; }
       }
 
@@ -104,7 +115,16 @@
         text-decoration: none;
       }
 
+    }
 
+    .introduction {
+      display: block;
+    }
+
+    #lnk-home {
+      position: static;
+      top: 0;
+      left: 0;
     }
   }
 
