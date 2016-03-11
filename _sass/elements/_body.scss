@@ -1,3 +1,66 @@
+.text-container {
+
+  padding-top: 20px;
+
+  form {
+    margin: 30px auto 80px auto;
+  }
+
+  h2 {
+    margin-bottom: 8px;
+
+    a {
+      display: block;
+    }
+  }
+
+  blockquote {
+    @include reset;
+
+    display: block;
+    font-family: 'Merriweather sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 110%;
+    font-weight: 300;
+    margin-bottom: 15px;
+    border-top: 1px solid $light-grey;
+    padding: 8px 0;
+    text-align: center;
+    color: $dark-grey;
+  }
+
+  article {
+    margin-bottom: 80px;
+  }
+
+  .btn-leggi {
+
+    margin-top: 25px;
+
+    a {
+      @include reset;
+
+      color: white;
+      background-color: $brand-primary;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      width: 120px;
+      text-align: center;
+      margin: 0 auto;
+
+      -webkit-box-shadow: 1px 1px 4px rgba(50, 50, 50, 0.4);
+      -moz-box-shadow: 1px 1px 4px rgba(50, 50, 50, 0.4);
+      -ms-box-shadow: 1px 1px 4px rgba(50, 50, 50, 0.4);
+      box-shadow: 1px 1px 4px rgba(50, 50, 50, 0.4);
+
+      &:hover, &:active, &:focus {
+        background-color: lighten($brand-primary, 20%);
+      }
+    }
+  }
+}
+
 @media (min-width: 930px) {
 
   [role='main'] {
