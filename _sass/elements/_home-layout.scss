@@ -1,0 +1,61 @@
+.home-page {
+
+  padding-top: 10px;
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+
+  h2 {
+    margin-bottom: 8px;
+
+    .logo-magazine {
+      height: auto;
+      max-width: 240px;
+      width: 100%;
+    }
+
+    a {
+      position: relative;
+      display: block;
+      color: inherit;
+      border: 0;
+      text-decoration: none;
+    }
+  }
+
+  blockquote {
+    @include reset;
+
+    display: block;
+    font-family: 'Merriweather sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: -6px 0 15px 0;
+    border-top: 1px solid $light-grey;
+    color: $black;
+    padding: 4px 0;
+    text-align: center;
+  }
+
+  .btn-vai {
+    margin-top: -.25em;
+    text-align: right;
+
+    a {
+      color: $brand-primary;
+      text-decoration: none;
+
+      &:hover, &:focus, &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  article {
+    margin-bottom: 50px;
+  }
+
+}
+
