@@ -43,8 +43,8 @@
     text-align: center;
   }
 
-  article:not(:last-child) {
-    margin-bottom: 65px;
+  article {
+    margin-bottom: 80px;
   }
 
   .logo-magazine {
@@ -55,7 +55,7 @@
 
   .btn-vai {
 
-    margin-top: 1.5em;
+    margin-top: 2em;
 
     a {
       @include reset;
