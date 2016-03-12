@@ -34,9 +34,9 @@
     font-weight: 300;
     margin: -6px 0 15px 0;
     border-top: 1px solid $light-grey;
-    color: $black;
     padding: 4px 0;
     text-align: center;
+    color: darken($dark-grey, 20%);
   }
 
   .btn-vai {
