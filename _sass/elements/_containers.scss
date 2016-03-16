@@ -15,11 +15,28 @@
   margin: 0 auto;
   padding: 0 $default-padding;
   max-width: 960px;
+  background-color: white;
 
   .layout-mgr {
     @include reset;
     @include clearfix;
   }
+
+}
+
+@media (min-width: 990px) {
+
+  body {
+    padding: 10px 0;
+    background-color: grayscale(lighten($brand-primary, 70%));
+  }
+
+  .infomedia-page-container {
+    padding: 15px 30px;
+    max-width: 992px;
+    box-shadow: 2px 2px 2px darken(grayscale(lighten($brand-primary, 70%)), 10%);
+  }
+
 }
 
 .text-container {
