@@ -7,10 +7,11 @@ $blue: #143C71;
 
 // named colors
 $brand-primary: $blue;
+$border-color: lighten($light-grey, 10%);
 
 // spacing
 $default-padding: 15px;
 
 // fonts
 $font-serif: 'Merriweather', serif;
-$font-sans: 'Merriweather sans', sans-serif;
+$font-sans: 'Lato', sans-serif;

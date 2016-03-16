@@ -5,7 +5,7 @@
   .logo-holder {
 
     width: 100%;
-    border-bottom: 1px solid $light-grey;
+    border-bottom: 1px solid $border-color;
 
     a {
       display: block;
@@ -57,6 +57,7 @@
       color: $dark-grey;
       text-decoration: none;
       font-family: $font-sans;
+      font-weight: bold;
     }
 
     a:hover, a:focus, a:active {
@@ -67,18 +68,11 @@
   }
 
   .introduction {
-    margin: 1em 0 2em 16px;
-    font-family: $font-sans;
-    font-style: italic;
     display: none;
   }
 
   #lnk-home {
     @include sr-only;
-  }
-
-  .donazioni {
-    display: none;
   }
 
 }
@@ -111,7 +105,7 @@
       a {
         display: block;
         padding: 15px;
-        border-bottom: 1px solid $light-grey;
+        border-bottom: 1px solid $border-color;
       }
 
       li.active a,
@@ -124,6 +118,11 @@
 
     .introduction {
       display: block;
+      margin: 1em 0 2em 16px;
+      font-family: $font-sans;
+      font-style: italic;
+      font-weight: 400;
+      p { line-height: 1.5; }
     }
 
     #lnk-home {
@@ -132,23 +131,6 @@
       left: 0;
     }
 
-    .donazioni {
-      display: block;
-      margin: 130px 16px 15px 16px;
-
-      font-family: $font-sans;
-      font-style: italic;
-      font-size: 15px;
-      text-align: center;
-
-      color: lighten($brand-primary, 30%);
-
-      h3 {
-        @include sr-only;
-      }
-
-      p { margin-bottom: 20px; }
-    }
   }
 
 }

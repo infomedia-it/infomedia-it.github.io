@@ -7,8 +7,8 @@
   font-size: 15px;
 
   .text-container {
-    border-top: 1px solid $light-grey;
-    padding-top: 15px;
+    border-top: 1px solid $border-color;
+    padding-top: 10px;
   }
 
   .contatti {
@@ -18,7 +18,7 @@
 
   .social {
 
-    padding: 20px 0;
+    padding: 20px 0 10px 0;
     text-align: center;
 
     ul {
@@ -66,7 +66,7 @@
   }
 
   .legale {
-    border-top: 1px solid $light-grey;
+    border-top: 1px solid $border-color;
     font-size: 13px;
     font-weight: 300;
     text-align: center;
@@ -79,6 +79,7 @@
     margin: 50px 0 40px 0;
     font-style: italic;
     font-size: 15px;
+    font-weight: 400;
     text-align: center;
     color: lighten($brand-primary, 30%);
   }
@@ -90,13 +91,19 @@
 
   [role='contentinfo'] {
 
+    position: relative;
+
     .text-container {
       max-width: none;
       width: 100%;
     }
 
     .donazioni {
-      display: none;
+      position: absolute;
+      width: 265px;
+      top: -220px;
+      left: 650px;
+
     }
 
   }

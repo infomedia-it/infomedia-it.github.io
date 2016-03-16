@@ -1,6 +1,7 @@
 html {
   font-family: $font-serif;
   font-size: 10px;
+  font-weight: 300;
 }
 
 body {
@@ -9,10 +10,14 @@ body {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.7;
   margin-bottom: 1em;
 }
 
 h1 {
   color: $brand-primary;
+}
+
+h1, h2 {
+  font-family: $font-sans;
 }

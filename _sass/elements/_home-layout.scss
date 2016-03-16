@@ -1,11 +1,11 @@
 .home-page {
 
   padding-top: 10px;
+  padding-bottom: 40px;
 
   h1 {
-    font-size: 36px;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    font-size: 56px;
+    margin: 50px 0 50px 0;
   }
 
   h2 {
@@ -34,18 +34,20 @@
     text-transform: uppercase;
     font-weight: 400;
     margin: -6px 0 15px 0;
-    border-top: 1px solid $light-grey;
+    border-top: 1px solid $border-color;
     padding: 4px 0;
     color: darken($dark-grey, 10%);
   }
 
   .btn-vai {
-    margin-top: -.25em;
+    margin-top: -1em;
     text-align: right;
 
     a {
       color: $brand-primary;
       text-decoration: none;
+      font-family: $font-sans;
+      font-weight: 700;
 
       &:hover, &:focus, &:active {
         text-decoration: underline;
