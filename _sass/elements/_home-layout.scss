@@ -5,7 +5,11 @@
 
   h1 {
     font-size: 56px;
-    margin: 50px 0 50px 0;
+    margin: 20px 0 50px 0;
+
+    @media (max-width: 929px) {
+      margin-top: 0;
+    }
   }
 
   h2 {

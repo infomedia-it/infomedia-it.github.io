@@ -28,5 +28,9 @@
 
   max-width: 605px;
   margin: 0 auto;
-  padding-bottom: 75px;
+  padding-bottom: 3.5em;
+
+  @media (max-width: 929px) {
+    padding-bottom: 2.5em;
+  }
 }
