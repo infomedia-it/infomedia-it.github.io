@@ -4,11 +4,11 @@
   padding-bottom: 40px;
 
   h1 {
-    font-size: 56px;
-    margin: 20px 0 50px 0;
+    font-size: 48px;
+    margin: 20px 0 30px 0 !important;
 
-    @media (max-width: 929px) {
-      margin-top: 0;
+    @media (min-width: 600px) {
+      font-size: 56px;
     }
   }
 
