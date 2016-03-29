@@ -5,14 +5,10 @@
 
   h1 {
     font-size: 48px;
-    margin: 25px 0 50px 0 !important;
+    margin: 35px 0 !important;
 
     @media (min-width: 600px) {
       font-size: 56px;
-    }
-
-    @media (min-width: 930px) {
-      margin: 25px 0 65px 0 !important;
     }
   }
 
@@ -64,7 +60,7 @@
   }
 
   article {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
 }
