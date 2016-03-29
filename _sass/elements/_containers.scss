@@ -27,12 +27,12 @@
 @media (min-width: 990px) {
 
   body {
-    padding: 10px 0;
+    padding: 25px 0;
     background-color: grayscale(lighten($brand-primary, 70%));
   }
 
   .infomedia-page-container {
-    padding: 15px 30px;
+    padding: 10px 30px;
     max-width: 992px;
     box-shadow: 2px 2px 2px darken(grayscale(lighten($brand-primary, 70%)), 10%);
   }
