@@ -34,7 +34,8 @@
     @include reset;
 
     display: block;
-    font-family: $font-sans;
+    font-family: $font-serif;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
     margin: -6px 0 15px 0;
