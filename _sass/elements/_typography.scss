@@ -11,13 +11,68 @@ body {
 
 p {
   line-height: 1.7;
-  margin-bottom: 1em;
+  margin-bottom: .75em;
 }
 
 h1 {
   color: $brand-primary;
+  font-family: $font-sans;
 }
 
-h1, h2 {
-  font-family: $font-sans;
+.text-container {
+
+  ul, ol {
+    @include reset;
+    list-style: none;
+  }
+
+  li {
+    @include reset;
+  }
+
+  h2 {
+    margin-top: 1em;
+    margin-bottom: .25em;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  ul, ol {
+    display: table;
+    margin-bottom: .75em;
+
+    li {
+      line-height: 1.7;
+    }
+
+    li::after {
+      content: "";
+      display: block;
+      margin-bottom: .75em;
+    }
+  }
+
+  ul li {
+    display: table-row;
+
+    &::before {
+      content: "\2022";
+      display: table-cell;
+      padding-right: 0.4em;
+    }
+  }
+
+  ol li {
+    counter-increment: table-ol;
+    display: table-row;
+
+    &::before {
+      content: counter(table-ol) ".";
+      display: table-cell;
+      padding-right: 0.4em;
+      text-align: right;
+    }
+  }
+
 }
