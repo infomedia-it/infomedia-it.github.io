@@ -21,3 +21,54 @@
   "elements/home-layout"
 ;
 
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* contenitore di immagine + nome, per centrarli assieme */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* fissa la larghezza allo stesso diametro del cerchio */
+  width: 150px;
+}
+
+.profile img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;        /* bordo interno bianco */
+  box-shadow: 0 0 0 2px #000;     /* bordo esterno nero */
+}
+
+.profile h3 {
+  margin: 0.75rem 0 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* assicura che il testo non superi la larghezza del cerchio */
+  text-align: center;
+  width: 100%;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 0.25rem 0;
+}
